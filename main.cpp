@@ -6,9 +6,7 @@
 #include "QGraphicsScene"
 #include "QGraphicsView"
 #include "QGraphicsPixmapItem"
-#include "qlabel.h"
-#include "qpixmap.h";
-#include "qimage.h"
+
 
 int main(int argc, char *argv[])
 {
