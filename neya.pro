@@ -12,10 +12,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    image_thresholder.cpp
+    image_thresholder.cpp \
+    sliders_group.cpp
 
 HEADERS  += mainwindow.h \
-    image_thresholder.h
+    image_thresholder.h \
+    sliders_group.h
 
 FORMS    += mainwindow.ui
 

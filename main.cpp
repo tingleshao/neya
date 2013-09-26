@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     int i,j;
     MainWindow w;
-//    w.show();
+    w.show();
     QVector<QRgb> colorTable;
     for (i = 0; i < 256; i++) {
         colorTable.push_back(qRgb(i,i,i));
