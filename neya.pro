@@ -11,9 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    image_thresholder.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    image_thresholder.h
 
 FORMS    += mainwindow.ui
 
