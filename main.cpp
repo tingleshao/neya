@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     MainWindow w;
    // w.show();
     control_panel cp;
+    cp.resize(100,600);
     cp.show();
 
     QVector<QRgb> colorTable;
