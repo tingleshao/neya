@@ -12,19 +12,19 @@
 
 #include "image_thresholder.h"
 
-#define BACKGROUND_THRESHOLD 90 // define the background thereshold 50
+#define BACKGROUND_THRESHOLD 200  // define the background thereshold 50
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     int i,j;
     MainWindow w;
-    w.show();
+//    w.show();
     QVector<QRgb> colorTable;
     for (i = 0; i < 256; i++) {
         colorTable.push_back(qRgb(i,i,i));
     }
-    QImage *img = new QImage("/home/chong/qt/neya/head.png");
+    QImage *img = new QImage("/home/chong/qt/neya/adtest_value_hot.png");
     img->setColorTable(colorTable);
     QLabel * img_label = new QLabel();
     img_label->setPixmap(QPixmap::fromImage(*img, Qt::AutoColor));
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
                 threshold_img->setPixel(i,j,qRgb(0,0,0));
             }
             else {
-                threshold_img->setPixel(i,j,img->pixel(i,j));
+                threshold_img->setPixel(i,j,qRgb(255,255,255));
             }
         }
     }
