@@ -1,4 +1,4 @@
 neya
 ====
 
-neya is a tool for visualizting multiple binary mask images. 
+neya is a tool for visualizing multiple binary mask images. 
