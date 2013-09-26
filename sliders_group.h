@@ -11,7 +11,7 @@ class sliders_group : public QGroupBox {
 
     public:
         sliders_group(const QString &title,
-                      QWidget *parent);
+                      QWidget *parent=0);
 
     signals:
         void valueChanged(int value);
