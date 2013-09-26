@@ -10,9 +10,9 @@ sliders_group::sliders_group(const QString &title, QWidget *parent) : QGroupBox(
 
     connect(slider, SIGNAL(valueChanged(int)), this, SIGNAL(valueChanged(int)));
 
-
-    //slidersLayout->addWidget(slider);
-
+    QHBoxLayout *slidersLayout = new QHBoxLayout;
+    slidersLayout->addWidget(slider);
+     setLayout(slidersLayout);
 
 }
 

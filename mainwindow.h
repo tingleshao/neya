@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
+#include <QStackedWidget>
 #include "sliders_group.h"
 
 namespace Ui {
@@ -19,7 +21,7 @@ public:
 private:
     Ui::MainWindow *ui;
     sliders_group *slider;
-
+    QStackedWidget *stackedWidget;
 
 
 };

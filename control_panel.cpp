@@ -1,12 +1,7 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "control_panel.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+control_panel::control_panel()
 {
-   // ui->setupUi(this);
-
     slider = new sliders_group(tr("w"));
 
 
@@ -21,10 +16,4 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->addWidget(stackedWidget);
     setLayout(layout);
 
-   // connect(slider, SIGNAL(valueChanged(int)));
-}
-
-MainWindow::~MainWindow()
-{
-    delete ui;
 }
