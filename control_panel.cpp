@@ -2,8 +2,7 @@
 
 control_panel::control_panel(QLabel * threshold_img_label, QImage * img )
 {
-    slider = new sliders_group(tr("w"), threshold_img_label, img);
-
+    slider = new sliders_group(tr("w"), threshold_img_label, img, 0);
     stackedWidget = new QStackedWidget;
     stackedWidget->addWidget(slider);
   //  createControls(tr("Controls"));

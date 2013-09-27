@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     int i,j;
-  //  MainWindow w;
-   // w.show();
+ // MainWindow w;
+ // w.show();
 
     QVector<QRgb> colorTable;
     for (i = 0; i < 256; i++) {
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
                 threshold_img->setPixel(i,j,qRgb(0,0,0));
             }
             else {
-                threshold_img->setPixel(i,j,qRgb(255,255,255));
+                threshold_img->setPixel(i,j,qRgb(255,0,0));
             }
         }
     }

@@ -19,14 +19,20 @@ class sliders_group : public QGroupBox {
         void valueChanged(int value);
 
     public slots:
-        void setValue(int value);
-        void setMinimum(int value);
-        void setMaximum(int value);
+        void setValue1(int value);
+        void setValue2(int value);
+  //      void setMinimum(int value);
+    //    void setMaximum(int value);
 
     private:
-        QSlider *slider;
+        QSlider *slider1;
+        QSlider *slider2;
         QLabel *threshold_img_label;
         QImage * img;
+        int slider1_value;
+        int slider2_value;
+
+        void update_img();
 
 };
 
