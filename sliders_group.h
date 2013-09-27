@@ -4,13 +4,15 @@
 #include "QGroupBox"
 #include "QSlider"
 #include "QBoxLayout"
+#include <stdio.h>
+#include <QLabel>
 
 class sliders_group : public QGroupBox {
 
     Q_OBJECT
 
     public:
-        sliders_group(const QString &title,
+        sliders_group(const QString &title, QLabel * threshold_img_label, QImage * img,
                       QWidget *parent=0);
 
     signals:
@@ -23,6 +25,8 @@ class sliders_group : public QGroupBox {
 
     private:
         QSlider *slider;
+        QLabel *threshold_img_label;
+        QImage * img;
 
 };
 

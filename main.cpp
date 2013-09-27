@@ -13,17 +13,14 @@
 
 #include "image_thresholder.h"
 
-#define BACKGROUND_THRESHOLD 200  // define the background thereshold 50
+#define BACKGROUND_THRESHOLD 200  // define the background thereshold
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     int i,j;
-    MainWindow w;
+  //  MainWindow w;
    // w.show();
-    control_panel cp;
-    cp.resize(100,600);
-    cp.show();
 
     QVector<QRgb> colorTable;
     for (i = 0; i < 256; i++) {
@@ -54,6 +51,9 @@ int main(int argc, char *argv[])
     threshold_img_label->setPixmap(QPixmap::fromImage(*threshold_img));
 
     threshold_img_label->show();
+    control_panel cp(threshold_img_label, img);
+    cp.resize(100,600);
+    cp.show();
 
     img_label->show();
 

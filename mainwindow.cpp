@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
    // ui->setupUi(this);
 
-    slider = new sliders_group(tr("w"));
+   // slider = new sliders_group(tr("w"), );
 
 
     stackedWidget = new QStackedWidget;
