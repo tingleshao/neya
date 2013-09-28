@@ -60,7 +60,7 @@ void sliders_group::update_img() {
             }
             if (pixel_intensity > slider2_value) {
                 int th_pixel_intensity = qGray(img->pixel(i,j));
-                threshold_img.setPixel(i,j,qRgb(th_pixel_intensity,th_pixel_intensity,th_pixel_intensity+255/2));
+                threshold_img.setPixel(i,j,qRgb(th_pixel_intensity,th_pixel_intensity,255/2));
             }
         }
     }

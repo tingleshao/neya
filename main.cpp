@@ -35,7 +35,9 @@ int main(int argc, char *argv[])
  // img_label->setScaledContents(true);
 
     // make an new image based on the threshold
+
     QImage *threshold_img = new QImage(*img);
+    /**
     for (i = 0; i < img->width(); i++) {
         for (j = 0; j < img->height(); j++) {
             int pixel_intensity = qGray(img->pixel(i,j));
@@ -46,13 +48,14 @@ int main(int argc, char *argv[])
                 threshold_img->setPixel(i,j,qRgb(255,0,0));
             }
         }
-    }
+    }*/
     QLabel * threshold_img_label = new QLabel();
     threshold_img_label->setPixmap(QPixmap::fromImage(*threshold_img));
 
     threshold_img_label->show();
     control_panel cp(threshold_img_label, img);
-    cp.resize(100,600);
+  //  cp.resize(100,600);
+    cp.setGeometry(0,0,100,600);
     cp.show();
 
     img_label->show();
